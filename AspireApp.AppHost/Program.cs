@@ -2,7 +2,7 @@ using Aspire.Hosting.Dapr;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var redis = builder.AddRedis("redis", 6379);
+var redis = builder.AddRedis("redis", 6500);
 
 var statestore = builder.AddDaprStateStore(
     "statestore",
